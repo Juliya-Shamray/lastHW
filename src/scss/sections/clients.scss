@@ -1,0 +1,82 @@
+.clients {
+    padding-top: 30px;
+}
+.clients__title {
+    @include H3-Caps;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: map-get($colors, main);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.clients-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    @include media-tablet-sm {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    @include media-mobile {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+.clients-list__link {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-mobile {
+        height: 90px;
+        width: auto;
+    }
+}
+.clients-list__logo{
+
+    @include media-tablet-m{
+        width: 65%;
+    }
+    @include media-mobile{
+        width: 50%;
+    }
+}
+.clients-list__link--hillel {
+    background-color: #1c4280;
+}
+.clients-list__link--wannabiz {
+    background-color: #143646;
+}
+.clients-list__link--tapgerine {
+    background-color: #f48b30;
+}
+.clients-list__link--3Dlook {
+    background-color: #9e4dc3;
+}
+.clients-list__link--orangear {
+    background-color: #fd9339;
+}
+.clients-list__link--adtelligent {
+    background-color: #e2e2e4;
+}
+.clients-list__link--Clickky {
+    background-color: #c71c36;
+}
+.clients-list__link--ecolease {
+    background-color: #dcf3f9;
+}
+.clients-list__link--Infratek {
+    background-color: #eaeaea;
+}
+.clients-list__link--ситипарк {
+    background-color: #282240;
+}
+.clients-list__link--art-print-studio {
+    background-color: #1d4568;
+}
+.clients-list__link--ultimade-card {
+    background-color: map-get($colors, black);
+}

@@ -1,0 +1,71 @@
+.team {
+    margin: 41px 0px;
+    position: relative;
+}
+
+.team-container {
+    @include media-mobile {
+        background-color: map-get($colors, Grey-Bg);
+    }
+}
+.team-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+.team__img {
+    width: 413px;
+
+    @include media-tablet-sm {
+        width: 300px;
+    }
+    @include media-tablet-m {
+        width: 200px;
+    }
+    @include media-mobile {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-self: end;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+.team__content {
+    padding: 40px;
+    background-color: map-get($colors, Grey-Bg);
+    border-radius: 12px;
+
+    @include media-tablet-m {
+        padding: 10px;
+    }
+
+}
+.team__link {
+    color: map-get($colors, Active-regular);
+    display: flex;
+    gap: 8.5px;
+
+    @include media-mobile{
+        margin-left: -60px;
+    }
+}
+.team__title {
+    margin-bottom: 20px;
+
+    @include media-mobile{
+    margin-left: -60px;
+    margin-bottom: 30px;
+    }
+}
+.team__autor {
+    color: map-get($colors, Grey-Text);
+    @include H4;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.team__position {
+    color: map-get($colors, Grey-Text);
+    font-weight: normal;
+    @include Paragraph-min;
+}

@@ -1,0 +1,11 @@
+.header-nav__list{
+    display: flex;
+    gap: 15px;
+    color: map-get($colors, white);
+    @include H4;
+    font-weight: 500;
+
+    @include media-tablet-m{
+        display: none;
+    }
+} 

@@ -1,0 +1,11 @@
+.title{
+    @include hero;
+    font-weight: bold;
+    color: transparent;    
+	background-clip: text;
+	background-image:map-get($colors, Gradient-Red-Text);
+
+    @include media-tablet-sm{
+        @include h2;
+    }
+}

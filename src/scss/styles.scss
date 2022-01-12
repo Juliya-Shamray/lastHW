@@ -1,3 +1,25 @@
-body {
-  background-color: red;
-}
+@import "variables";
+@import "mixins/fonts.scss";
+@import "mixins/flex.scss";
+@import "mixins/media.scss";
+
+
+@import "components/Assets.scss";
+@import "components/switcher.scss";
+@import "components/header-contacts.scss";
+@import "components/header-nav.scss";
+@import "components/title.scss";
+@import "components/link.scss";
+@import "components/slider.scss";
+
+@import "font.scss";
+@import "reset.scss";
+@import "index.scss";
+
+@import "sections/hero.scss";
+@import "sections/services.scss";
+@import "sections/team.scss";
+@import "sections/cases.scss";
+@import "sections/clients.scss";
+@import "sections/publication.scss";
+@import "sections/footer.scss";

@@ -1,0 +1,44 @@
+@mixin hero {
+    font-size: 4.2rem;
+    line-height: (50/42);
+}
+@mixin h {
+    font-size: 3.8rem;
+    line-height: (45 / 38);
+}
+@mixin h2 {
+    font-size: 3.2rem;
+    line-height: (38 / 32);
+}
+@mixin H3 {
+    font-size: 2.4rem;
+    line-height: (28 /24);
+}
+@mixin text {
+    font-size: 2.1rem;
+    line-height: (30 / 21);
+}
+@mixin H4 {
+    font-size: 1.8rem;
+    line-height: (21 /18);
+}
+@mixin H3-Caps {
+    font-size: 1.4rem;
+    line-height: (17 /14);
+}
+@mixin Paragraph-min {
+    font-size: 1.6rem;
+    line-height: (22/16);
+}
+@mixin Paragraph {
+    font-size: 1.6rem;
+    line-height: (19/16);
+}
+@mixin Unordered-list {
+    font-size: 1.8rem;
+    line-height: (26 /18);
+}
+@mixin text-min {
+    font-size: 1.2rem;
+    line-height: ( 14 / 12);
+}

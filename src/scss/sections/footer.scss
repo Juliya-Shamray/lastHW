@@ -1,0 +1,105 @@
+.footer {
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-tablet-m {
+        flex-direction: column;
+    }
+}
+.footer-list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    &:first-child {
+        gap: 47px;
+
+        @include media-mobile {
+            gap: 10px;
+        }
+    }
+    &:last-child {
+        gap: 26px;
+        @include media-mobile{
+            gap: 20px;
+        }
+    }
+    @include media-tablet-m {
+        flex-direction: column;
+    }
+}
+.footer-list__txt {
+    @include Paragraph;
+    color: map-get($colors, main);
+    font-weight: 500;
+}
+.footer-list__link {
+    position: relative;
+    @include text-min;
+    color: map-get($colors, Active-regular);
+    font-weight: 500;
+    transition: all 0.5s;
+    & svg > path {
+        transition: fill 1s;
+    }
+    &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: map-get($colors, Grey-Text);
+        position: absolute;
+        left: -15px;
+        top: 5px;
+
+        @include media-tablet-sm{
+            display: none;
+        }
+
+    }
+    &:hover {
+        color: map-get($colors, Accent);
+    }
+}
+.footer-list__tel {
+    position: relative;
+    @include Paragraph;
+    color: map-get($colors, main-alt);
+    font-weight: 500;
+
+    @include media-mobile{
+        color: map-get($colors, main);
+        font-weight: 700;
+    }
+    &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: map-get($colors, Grey-Text);
+        position: absolute;
+        left: -10px;
+        bottom: 5px;
+
+        @include media-mobile{
+            display: none;
+        }
+    }
+}
+.footer__caption {
+    @include Paragraph;
+    color: map-get($colors, Grey-Text);
+
+    @include media-tablet-m{
+        align-self: center;
+    }
+}
+path {
+    transition: all 0.5s;
+}
+path:hover {
+    fill: map-get($colors, Accent);
+}

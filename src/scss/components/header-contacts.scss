@@ -1,0 +1,29 @@
+.header-contacts{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    @include Paragraph;
+    color: map-get($colors, white);
+    list-style: disc;
+
+    @include media-tablet-m{
+        list-style: none;
+    }
+    
+}
+.header-contacts__item:first-child{
+    font-weight: 400;
+
+    @include media-tablet-m{
+        display: none;
+    }
+}
+.header-contacts__item:last-child{
+
+    @include media-tablet-m{
+    display: none;
+    }
+}
+

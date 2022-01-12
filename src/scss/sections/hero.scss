@@ -1,0 +1,84 @@
+.hero{
+    padding-top: 50px;
+    min-height: 100vh;
+    background-image: map-get($colors, Gradient-soft);
+    background-size: cover;
+    background-position: center;
+    @include flex-column;
+    justify-content: space-between;
+
+}
+.hero__content{ 
+    position: relative;
+    @include flex-column;
+    justify-content: center;
+    background-image:linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%),url("../../img/Symbol-P.svg"),url("../../img/frame.svg");
+    background-size: 100% 200px, auto, auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @include media-mobile{
+        background-image:linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%),url("../../img/Symbol-P.svg");
+        background-size: 100% 200px,  auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+.hero__title{
+    color: map-get($colors, white);
+    @include h;
+    text-transform: lowercase;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    @include flex-column;
+
+    @include media-tablet-sm{
+        width: 49%;
+    }
+    @include media-mobile{
+        width: 80%
+    }
+}
+.hero-header{  
+    @include flex-between;
+
+    @include media-tablet-m{
+        justify-content: space-between;
+    }
+}
+.logo-img{
+    width: 155px;
+
+    @include media-tablet-sm{
+        width: 50%;
+    }
+    @include media-mobile{
+        width: 77.5px;
+    }
+}
+.hero__img{
+    padding: 12px;
+    border: 1px solid rgba(255,255,255, .5);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.button {
+    text-align: center;
+}
+
+.header__content{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+
+    @include media-tablet-m{
+        margin-bottom: 30px;
+    }
+}
+.wrapper{
+    @include flex-column;
+    gap: 19px;
+}
