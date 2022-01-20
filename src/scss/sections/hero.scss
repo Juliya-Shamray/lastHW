@@ -7,6 +7,16 @@
     @include flex-column;
     justify-content: space-between;
 
+    @include media-tablet-m{
+        padding-top: 20px;
+    }
+}
+.burger{
+    display: none;
+
+    @include media-tablet-m{
+        display: block;
+    }
 }
 .hero__content{ 
     position: relative;
@@ -44,20 +54,15 @@
 }
 .hero-header{  
     @include flex-between;
-
-    @include media-tablet-m{
-        justify-content: space-between;
-    }
 }
 .logo-img{
     width: 155px;
 
     @include media-tablet-sm{
         width: 50%;
+        margin-top: 20px;
     }
-    @include media-mobile{
-        width: 77.5px;
-    }
+
 }
 .hero__img{
     padding: 12px;
@@ -73,12 +78,12 @@
     display: flex;
     gap: 20px;
     align-items: baseline;
-
-    @include media-tablet-m{
-        margin-bottom: 30px;
-    }
 }
 .wrapper{
     @include flex-column;
-    gap: 19px;
+    gap: 19px; 
+
+    @include media-tablet-m{
+        align-items: flex-end;
+    }
 }

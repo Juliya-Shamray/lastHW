@@ -139,11 +139,11 @@
 .services-list__item{
     width: 413px;
 
-    @include media-mobile{
-        width: 390px;
+    @include media-tablet{
+        width: 380px;
     }
 
-    @include media-tablet-m{
+    @include media-tablet-sm{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -159,8 +159,11 @@
     @include media-tablet-sm{
         width: 85px;
 
-    @include media-tablet-m{
+    @include media-tablet-sm{
         margin-right: 10px;
+    }
+    @include media-mobile{
+        width: 64px;
     }
     }
 }
@@ -172,8 +175,20 @@
     @include media-tablet-m{
         width: 260px
     }
+    @include media-mobile{
+        @include H4;
+    }
 }
 .services-list__txt{
 @include Unordered-list;
 color: map-get($colors, white);   
+}
+.experience__slider{
+    display: none;
+  
+    @include media-tablet-m{
+        display: block;
+        margin-top: 20px;
+    }
+
 }

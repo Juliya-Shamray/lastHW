@@ -121,6 +121,10 @@
         display: none;
     }
 }
+.center{
+    display: flex;
+    justify-content: center;
+}
 .publication__button{
     @include H3-Caps;
     color: map-get($colors, white);
@@ -129,19 +133,14 @@
     background-color: map-get($colors, Active-regular);
     border-radius: 12px;
     box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-    position: absolute;
-    left: 40%;
-    bottom: 20%;
     transition: all 0.5s;
+    position: absolute;
+    top: 50%;
     &:hover{
         background-color: map-get($colors, Active-hover);
     }
     &:active{
         background-color: map-get($colors, Active-active);
     }
-    @include media-mobile{
-        top: 100px;
-        left: 20px;
-
-    }
 }
+

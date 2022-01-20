@@ -9,9 +9,12 @@
     list-style: disc;
 
     @include media-tablet-m{
+        color:map-get($colors, Grey-Text);
+    }
+
+    @include media-tablet-m{
         list-style: none;
     }
-    
 }
 .header-contacts__item:first-child{
     font-weight: 400;
@@ -26,4 +29,5 @@
     display: none;
     }
 }
+
 

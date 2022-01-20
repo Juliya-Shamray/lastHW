@@ -1,6 +1,12 @@
 .switcher{
+    position: relative;
     display: flex;
     align-items: center;
+
+    @include media-tablet-m{
+        position: absolute;
+        left: 8%;
+    }
 }
 .switcher__caption{
     font-weight: bold;

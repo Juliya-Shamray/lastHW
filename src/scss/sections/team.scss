@@ -29,6 +29,7 @@
         align-self: end;
         margin-left: 20px;
         margin-bottom: 10px;
+        flex-shrink: 0;
     }
 }
 .team__content {
@@ -47,14 +48,14 @@
     gap: 8.5px;
 
     @include media-mobile{
-        margin-left: -60px;
+        margin-left: -70px;
     }
 }
 .team__title {
     margin-bottom: 20px;
 
     @include media-mobile{
-    margin-left: -60px;
+    margin-left: -70px;
     margin-bottom: 30px;
     }
 }
@@ -68,4 +69,8 @@
     color: map-get($colors, Grey-Text);
     font-weight: normal;
     @include Paragraph-min;
+
+    @include media-mobile{
+        margin-bottom: 10px;
+    }
 }

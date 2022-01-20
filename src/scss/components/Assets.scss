@@ -2,11 +2,12 @@
     display: inline-block;
     width: 18px;
     height: 14px;
-    border-bottom: 2px solid #323264;
+    border-bottom: 2px solid map-get($colors, white);
     position: relative;
+    cursor: pointer;
     &::after {
         content: '';
-        background:#323264;
+        background:map-get($colors, white);
         height: 2px;
         width: 100%;
         display: block;
@@ -14,14 +15,14 @@
         top: 0;
         left: 0;
     }
-    &::before{
+    &::before {
         content: '';
-        background:#323264;
+        background:map-get($colors, white);
         height: 2px;
         width: 100%;
         display: block;
         position: absolute;
         top: 6px;
-        left:0px;
+        left: 0px;
     }
 }
