@@ -9,3 +9,6 @@
         display: none;
     }
 } 
+.header-nav__link--page-services{
+    border-bottom: 2px solid map-get($colors, white);
+}

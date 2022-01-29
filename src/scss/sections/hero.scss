@@ -55,6 +55,14 @@
 .hero-header{  
     @include flex-between;
 }
+.hero-header--page-services{
+    margin-bottom: 75px;
+
+ @include media-tablet-sm{
+     margin-bottom: 20px;
+ }
+ 
+}
 .logo-img{
     width: 155px;
 
@@ -64,6 +72,21 @@
     }
 
 }
+.logo-img__slash{
+
+    @include media-tablet-sm{
+        width: 11px;
+        height: 23px;
+    }
+}
+.logo-img__p-small{
+
+    @include media-tablet-sm{
+        width: 21px;
+        height: 24px;
+    }
+}
+
 .hero__img{
     padding: 12px;
     border: 1px solid rgba(255,255,255, .5);

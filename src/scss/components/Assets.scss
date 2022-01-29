@@ -26,3 +26,30 @@
         left: 0px;
     }
 }
+.logo-page{
+    display: flex;
+    align-items: start;
+    gap: 1px;
+
+    @include media-tablet-sm{
+        align-items: center;
+    }
+}
+.logo-page__wrapper{
+    display: flex;
+
+    @include media-tablet-sm{
+    margin-top: 20px;
+    margin-left: -75px;
+    }
+}
+.logo-page__title{
+    @include h;
+    color: map-get($colors, white);
+    font-weight: 400;
+
+    
+    @include media-tablet-sm{
+      @include H4;
+    }
+}
